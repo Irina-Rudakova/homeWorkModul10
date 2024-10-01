@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>O.A.D.</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+              <li><a href="#1">Home</a></li>
+              <li><a href="#2">Basket</a></li>
+              <li><a href="#3">Contacts</a></li>
+            </ul>
+        </nav>    
+    </header>
+    <div class="container">
+        <div id1 class="content">
+            <form>
+              <label for="title">Product Name:</label>
+              <input type="text" id="title" name="title">
+      
+              <label for="price">Price:</label>
+              <input type="number" id="price" name="price">
+      
+              <label for="description">Description:</label>
+              <textarea id="description" name="description"></textarea>
+      
+              <label for="category">Category:</label>
+              <input type="text" id="category" name="category">
+      
+              <button id="addBtn" class="addBtn">Add a product</button>
+            </form>
+            <div class="text">
+              <h3>O.A.D. Best Selling knitwear</h3>
+              <p>In 1853 Ole Andreas Devold embarked on his journey, and since then our wool has been formed in the roughest conditions. Today, we build on our tradition of mastering wool. Relying on our dedication to craftmanship, we develop the finest quality from the most robust material. Crafted to withstand storms and to comfort on late summer nights. With profound care for nature, we create knitwear that lasts, that can be passed on – a legacy for times to come.</p>
+              <div class="flow">
+                <img src="./f.img/IMAGE.png">
+              </div>
+            </div>
+          </div>
+          <h1>Shop</h1>
+          <div id="productList">
+          </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

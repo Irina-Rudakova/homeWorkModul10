@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    height: 56px; 
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+   }
+
+li{
+    display: inline;
+    margin-right: 10px;
+    margin-left: 10px;
+}   
+
+a {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 143%;
+    text-align: center;
+    color: #156963;
+    text-decoration: none;
+}   
+
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+form{
+  display: flex;  
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+}
+input,textarea{
+  padding: 10px; 
+  border: 1px solid #e0e0e0;
+}
+p{
+  margin: 10px 0;
+}
+.content{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+}
+.addBtn{
+  padding: 10px;
+  background-color: #156963;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family:"Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 143%;
+  text-align: center;
+}
+.container{
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 50px auto;
+}
+
+h3, h2, h1{
+  color: #156963;
+}
+
+h1{
+    padding-top: 60px ;
+}
+
+.flow{
+  padding: 20px;
+  text-align: center;
+}
+
+img{
+  max-width: 500px;
+}
+
+#productList{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+#productList div{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 20px;  
+  border: 1px solid grey;
+}
+#productList img{
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
+}
+#productList button{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid grey;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+#productList button:hover{
+  color: #fff;
+  background-color: #156963;
+}
